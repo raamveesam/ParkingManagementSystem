@@ -1,0 +1,12 @@
+# Executables and Binaries
+*.exe
+*.out
+*.app
+*.o
+*.obj
+
+# Build and IDE directories
+.vscode/
+.idea/
+bin/
+build/
