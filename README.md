@@ -1,14 +1,16 @@
 # Smart Parking Management System
 
-A C++ console-based Parking Management System that utilizes linked lists and dynamic arrays to manage parking slots and parked vehicles.
+A robust C++ console-based Parking Management System that utilizes linked lists and dynamic arrays to manage parking slots and vehicles.
 
 ## Features
 
-- **Dynamic Slot Allocation**: Allows configuring total parking slots at runtime.
-- **Vehicle Registration**: Assigns the first available parking slot and registers vehicle details with entry timestamps.
-- **Parking Slot Status**: Displays real-time availability of all parking slots.
-- **Parked Vehicles List**: Displays records of all currently parked vehicles using a linked list.
-- **Search Functionality**: Quickly search for any vehicle by its registration number.
+- **Dynamic Slot Configuration**: Configure total parking capacity at startup with robust input validation.
+- **Vehicle Registration**: Automatically allocates the first available slot, validates for duplicates, and records owner details and check-in timestamps.
+- **Unpark / Checkout**: Allows parked vehicles to leave, marks their assigned slot as available again, and frees memory.
+- **Real-Time Slot Status**: View the occupancy status of every slot.
+- **Parked Vehicles Directory**: Displays all parked vehicles with entry timestamps.
+- **Vehicle Search**: Search for any parked vehicle by registration number.
+- **Memory Safety**: Full cleanup of all dynamic arrays and linked list nodes to prevent memory leaks.
 
 ## Getting Started
 
@@ -27,7 +29,7 @@ g++ -o parking_system main.cpp
 Run the application:
 
 - **Windows**:
-  ```bash
+  ```powershell
   .\parking_system.exe
   ```
 - **Linux / macOS**:
